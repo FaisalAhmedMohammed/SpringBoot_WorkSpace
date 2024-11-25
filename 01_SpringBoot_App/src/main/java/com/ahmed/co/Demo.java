@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 public class Demo {
 	
 	public Demo() {
-		System.out.println("Demo::Constructor ::");
+		System.out.println("Demo::Constructor ");
 	}
 
 }
