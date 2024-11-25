@@ -7,18 +7,8 @@ import in.ahmed.Dao.ProductDao;
 
 @Service
 public class ProductService {
-
-	private ProductDao dao;
-
-	public ProductService() {
-
-		System.out.println("No param :: constructor");
-	}
 	@Autowired
-	public ProductService(ProductDao dao) {
-		super();
-		this.dao = dao;
-	}
+	private ProductDao dao;
 
 	public void service() {
 		dao.saveProduct();

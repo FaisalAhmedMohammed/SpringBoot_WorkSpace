@@ -41,4 +41,6 @@
 		<section name="NewWizard.dialogBounds">
 		</section>
 	</section>
+	<section name="SmartImportWizard">
+	</section>
 </section>
