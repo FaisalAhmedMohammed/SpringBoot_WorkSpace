@@ -1,0 +1,19 @@
+package in.ahmed.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import in.ahmed.Dao.ProductDao;
+
+@Service
+public class ProductService {
+
+	private ProductDao dao;
+
+	public ProductService 
+
+	public void service() {
+		dao.saveProduct();
+	}
+
+}

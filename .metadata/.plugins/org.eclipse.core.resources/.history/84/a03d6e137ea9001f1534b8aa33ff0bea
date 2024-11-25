@@ -1,0 +1,10 @@
+package in.ahmed.Dao;
+@R
+public class ProductDao {
+
+	public void saveProduct() {
+
+		System.out.println("Product saved in database");
+	}
+
+}

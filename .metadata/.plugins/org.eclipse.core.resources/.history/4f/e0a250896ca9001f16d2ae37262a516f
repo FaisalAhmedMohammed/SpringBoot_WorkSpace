@@ -1,0 +1,17 @@
+package in.ahmed.config;
+
+import org.springframework.context.annotation.Bean;
+
+import in.ahmed.Security.AppSecurity;
+
+public class AppConfig {
+
+	public AppConfig() {
+		System.out.println("AppConfig :: Constructor");
+	}
+	@Bean
+	public AppSecurity getIstance() {
+		return new AppSecurity();
+	}
+
+}

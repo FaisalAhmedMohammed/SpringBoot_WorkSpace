@@ -1,0 +1,9 @@
+package in.ahmed.Security;
+
+public class AppSecurity {
+	public AppSecurity() {
+
+		System.out.println("A");
+	}
+
+}

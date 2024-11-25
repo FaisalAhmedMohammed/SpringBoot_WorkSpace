@@ -1,0 +1,13 @@
+package in.ahmed.banners;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Banner {
+
+	public Banner() {
+		System.out.println("Banner :: Constructor");
+	}
+	
+
+}

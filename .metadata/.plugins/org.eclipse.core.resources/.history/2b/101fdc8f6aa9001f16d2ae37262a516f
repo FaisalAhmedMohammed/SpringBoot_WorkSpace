@@ -1,0 +1,10 @@
+package in.ahmed.dao;
+
+public class ReportDao {
+	
+	public ReportDao() {
+		
+		System.out.println("");
+	}
+
+}

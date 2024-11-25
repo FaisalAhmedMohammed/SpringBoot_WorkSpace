@@ -1,0 +1,10 @@
+package in.ahmed.Service;
+@Service
+public class ReportService {
+	
+	public ReportService() {
+		
+		System.out.println("Service :: Constructor");
+	}
+
+}

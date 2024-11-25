@@ -1,0 +1,12 @@
+package in.ahmed.config;
+
+import in.ahmed.Security.AppSecurity;
+
+public class AppConfig {
+	
+	
+	public AppSecurity getIstance() {
+		return new AppSecurity;
+	}
+
+}

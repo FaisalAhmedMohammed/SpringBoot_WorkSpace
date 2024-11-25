@@ -1,0 +1,16 @@
+package in.ahmed.Service;
+
+public class ProductService {
+
+	ProductService dao;
+
+	public void setDao(ProductService dao) {
+		this.dao = dao;
+	}
+	
+	
+	public void Service() {
+		dao.sa
+	}
+
+}
