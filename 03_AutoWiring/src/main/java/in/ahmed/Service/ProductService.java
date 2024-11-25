@@ -11,6 +11,7 @@ public class ProductService {
 	private ProductDao dao;
 
 	public void service() {
+		System.out.println("hello");
 		dao.saveProduct();
 	}
 
