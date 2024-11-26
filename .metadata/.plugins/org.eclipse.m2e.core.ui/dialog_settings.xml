@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\SBMS\SpringBoot_WorkSpace\03_AutoWiring"/>
 			<item value="C:\SBMS\BootWorkSpace\02_Sb_App"/>
 		</list>
 		<list key="projectNameTemplate">
