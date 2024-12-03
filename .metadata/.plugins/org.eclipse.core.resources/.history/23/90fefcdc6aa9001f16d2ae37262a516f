@@ -1,9 +1,0 @@
-package in.ahmed.utils;
-
-public class PwdUtils {
-	
-	public PwdUtils() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

@@ -18,9 +18,9 @@ public class Application {
 
 		Employee emp = new Employee();
 
-		emp.setEmpId(102);
-		emp.setEmpName("ahmed");
-		emp.setEmpSalary(2500.0);
+		emp.setEmpId(103);
+		emp.setEmpName("faisal mohammed");
+		emp.setEmpSalary(3000.0);
 		
 		emprope.save(emp);
 

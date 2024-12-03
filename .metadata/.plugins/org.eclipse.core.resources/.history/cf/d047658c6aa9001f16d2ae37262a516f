@@ -1,9 +1,0 @@
-package in.ahmed.dao;
-
-public class ReportDao {
-	
-	public ReportDao() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
