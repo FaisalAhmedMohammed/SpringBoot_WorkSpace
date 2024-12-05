@@ -9,8 +9,9 @@ import java.util.Optional;
 
 public interface CustomerRepository extends CrudRepository<Customer, Integer> {
 	
-	
+	//select * from customer where name=?
 	List<Customer> findByName(String name);
 	
+	//select * from customer where country =? and emailId=?
 	Optional<Customer> findByCountryAndEmailId(String country,String emailId);
 }
