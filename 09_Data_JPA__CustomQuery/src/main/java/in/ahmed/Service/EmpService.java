@@ -61,11 +61,13 @@ public class EmpService {
 	 * employeeRepository.getUsaEmp(country); for (Employee employee : usaEmp) {
 	 * System.out.println(employee); } }
 	 */
-	/*
-	 * public void getNameAndCountry(String name, String country) { List<Employee>
-	 * byNameAndCountry = employeeRepository.getByNameAndCountry(name, country);
-	 * byNameAndCountry.forEach(e -> { System.out.println(e); }); }
-	 */
+
+	public void getNameAndCountry(String name, String country) {
+		List<Employee> byNameAndCountry = employeeRepository.getByNameAndCountry(name, country);
+		byNameAndCountry.forEach(e -> {
+			System.out.println(e);
+		});
+	}
 
 	/*
 	 * public void getSql() { List<Employee> byNativeSql =
@@ -102,9 +104,9 @@ public class EmpService {
 		employee3.setName("dfgft");
 		employee3.setSalary(7000.8);
 		employee3.setCountry("UK");
-		
-		List<Employee> asList = Arrays.asList(employee,employee2,employee3);
-		employeeRepository.saveUserHql(asList);
+
+		List<Employee> asList = Arrays.asList(employee, employee2, employee3);
+		// employeeRepository.saveUserHql(asList);
 
 	}
 }

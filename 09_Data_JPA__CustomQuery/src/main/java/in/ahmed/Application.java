@@ -14,7 +14,7 @@ public class Application {
 		EmpService empService = context.getBean(EmpService.class);
 		// empService.saveUser();
 
-		// empService.getAllUsers();
+		 //empService.getAllUsers();
 
 		// empService.getUserByCountry("USA");
 		// empService.getNameAndCountry("SCOTT", "CANADA");
@@ -23,7 +23,7 @@ public class Application {
 		
 		//empService.getHqlUsers(133, "Allen", 464.0, "India");
 		//empService.getHql(222,"AFNAN",2000.0,"INDIA");
-		empService.getHql();
+		//empService.getHql();
 		
 		
 		

@@ -1,5 +1,6 @@
 package in.ahmed.repo;
 
+import java.security.PublicKey;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.Modifying;
@@ -27,18 +28,20 @@ public interface EmployeeRepository extends CrudRepository<Employee, Integer> {
 	 * @Query("FROM Employee WHERE country = :country") public List<Employee>
 	 * getUsaEmp(@Param("country") String country);
 	 */
+
+	@Query("Select u From Employee u Where u.name =:n and u.country =:c")
+	public List<Employee> getByNameAndCountry(@Param("n") String name, @Param("c") String country);
+
+	@Query(value = "select * from New_Employee ", nativeQuery = true)
+	public List<Employee> getByNativeSql();
+
 	/*
-	 * @Query("Select u From Employee u Where u.name =:n and u.country =:c") public
-	 * List<Employee> getByNameAndCountry(@Param("n") String name, @Param("c")
-	 * String country);
+	 * @Transactional
+	 * 
+	 * @Modifying
+	 * 
+	 * @Query(
+	 * value="Insert Into Employee(id,name,salary,country)values(:id,:name,:salary,:country)"
+	 * ) public void saveUserHql(List<Employee> asList);
 	 */
-	/*
-	 * @Query(value = "select * from New_Employee ", nativeQuery = true) public
-	 * List<Employee> getByNativeSql();
-	 */
-	
-	@Transactional
-	@Modifying
-	@Query(value="Insert Into Employee(id,name,salary,country)values(:id,:name,:salary,:country)")
-	public void saveUserHql(List<Employee> asList);
 }
