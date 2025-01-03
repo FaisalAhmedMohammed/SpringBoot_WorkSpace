@@ -12,7 +12,13 @@ public class Application {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
 		PersonPassportService bean = context.getBean(PersonPassportService.class);
-		bean.saveUser();
+		// bean.saveUser();
+		// bean.deletePerson(1);
+
+		// bean.deletePassport(1);
+		// bean.deletePerson(1);
+
+		bean.getPerson(2);
 	}
 
 }

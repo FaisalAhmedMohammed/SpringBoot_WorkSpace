@@ -32,7 +32,7 @@ public interface EmployeeRepository extends CrudRepository<Employee, Integer> {
 	@Query("Select u From Employee u Where u.name =:n and u.country =:c")
 	public List<Employee> getByNameAndCountry(@Param("n") String name, @Param("c") String country);
 
-	@Query(value = "select * from New_Employee ", nativeQuery = true)
+	@Query(value = "select * from New_Employee ", nativeQuery = true)//here we don't need parsing directly it can execute sql queries directely
 	public List<Employee> getByNativeSql();
 
 	/*

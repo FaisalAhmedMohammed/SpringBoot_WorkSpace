@@ -16,7 +16,7 @@ public class UserService {
 	private UserRepository userRepos;
 
 	public UserService(UserRepository userRepos) {
-		this.userRepos = userRepos;
+		this.userRepos = userRepos;	
 	}
 
 	public void deleteAll() {

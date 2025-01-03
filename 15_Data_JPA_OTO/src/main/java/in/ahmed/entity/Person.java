@@ -6,10 +6,12 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Setter
 @Getter
 @Entity
+@ToString
 public class Person {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

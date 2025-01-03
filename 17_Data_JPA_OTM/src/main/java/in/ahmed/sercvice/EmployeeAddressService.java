@@ -45,13 +45,15 @@ public class EmployeeAddressService {
 		address.setCity("bangalore");
 		address.setState("katnataka");
 		address.setType("present");
-		address.setEmployee(employee);
+
+		address.setEmployee(employee);// here we are setting address object to employee object
 
 		Address address2 = new Address();
 
 		address2.setCity("Hyd");
 		address2.setState("Telengana");
 		address2.setType("Permanent");
+		
 		address2.setEmployee(employee);
 
 		List<Address> asList = Arrays.asList(address, address2);

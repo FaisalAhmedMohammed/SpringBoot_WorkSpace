@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+//by default noargs constructor will come 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
