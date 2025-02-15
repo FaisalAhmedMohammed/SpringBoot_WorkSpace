@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Customer Operations</title>
+</head>
+<body>
+    <h1>Customer Operations</h1>
+
+    <!-- Display message -->
+    <p th:if="${message}" th:text="${message}"></p>
+
+    <!-- Display customer details -->
+    <div th:if="${customer}">
+        <h2>Customer Details</h2>
+        <p><strong>ID:</strong> <span th:text="${customer.id}"></span></p>
+        <p><strong>Name:</strong> <span th:text="${customer.name}"></span></p>
+        <p><strong>Phone:</strong> <span th:text="${customer.phno}"></span></p>
+    </div>
+
+    <!-- Links to trigger actions -->
+    <a href="/convertToJson">Convert Java Object to JSON</a> | 
+    <a href="/convertToJava">Convert JSON to Java Object</a>
+</body>
+</html>

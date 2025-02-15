@@ -20,6 +20,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\SBMS\SpringBoot_WorkSpace\24_Json_App\src\main\java\in\ahmed\main\App.java"/>
 			<item value="C:\SBMS\SpringBoot_WorkSpace\21_WebMvc_UserRegistration\src\main\java\in\ahmed\controller\UserController.java"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -65,8 +66,10 @@
 			<item value="in.ahmed"/>
 		</list>
 		<list key="name">
+			<item value="24_jsonApp"/>
 		</list>
 		<list key="artifactId">
+			<item value="com.ahmed"/>
 			<item value="24_Json_App"/>
 		</list>
 		<list key="projectNameTemplate">
